@@ -2,7 +2,7 @@
 # (original-solutions/homebrew-livepane → Formula/livepane.rb).
 #
 # After each GitHub Release of livepane:
-#   1. Set 0.5.0 (no leading "v"; matches GoReleaser {{ .Version }}).
+#   1. Set 0.5.1 (no leading "v"; matches GoReleaser {{ .Version }}).
 #   2. Fill the four SHA256 placeholders from release checksums.txt.
 #   3. Copy this file into the tap repo as Formula/livepane.rb (strip this header if desired).
 #
@@ -16,28 +16,28 @@
 class Livepane < Formula
   desc "LivePane machine agent — claim, heartbeat, stream terminal panes"
   homepage "https://livepane.io"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/original-solutions/livepane-agent/releases/download/v0.5.0/livepane_0.5.0_darwin_arm64.tar.gz"
-      sha256 "24b24adf3e87d5cb37c8c0b425de3b50b854a7d5dd77556e4d1ad10866bc7a99"
+      url "https://github.com/original-solutions/livepane-agent/releases/download/v0.5.1/livepane_0.5.1_darwin_arm64.tar.gz"
+      sha256 "f97c7e7bda2f83643b8fb8416c47b9a39b546265a0ca9b477ba88a9f559fc32d"
     end
     on_intel do
-      url "https://github.com/original-solutions/livepane-agent/releases/download/v0.5.0/livepane_0.5.0_darwin_amd64.tar.gz"
-      sha256 "ce80c4e2016f91d708211e395cf2bf9d4695b0f1971e7f5bf99080fd5f0387ae"
+      url "https://github.com/original-solutions/livepane-agent/releases/download/v0.5.1/livepane_0.5.1_darwin_amd64.tar.gz"
+      sha256 "cd487234f46981b80e8d8ea50a1ed3cf52c8e12ca8e3dd1f49e5b757ad2d4f64"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/original-solutions/livepane-agent/releases/download/v0.5.0/livepane_0.5.0_linux_arm64.tar.gz"
-      sha256 "397ddfdd8f359098cfb8e2338eaaca3f01fe131059375b9b4315f16e3c7a5f15"
+      url "https://github.com/original-solutions/livepane-agent/releases/download/v0.5.1/livepane_0.5.1_linux_arm64.tar.gz"
+      sha256 "3a18152a8ba494534f7be036f9ffe3199f5f5a685817fbf6e6bdffc9b651e896"
     end
     on_intel do
-      url "https://github.com/original-solutions/livepane-agent/releases/download/v0.5.0/livepane_0.5.0_linux_amd64.tar.gz"
-      sha256 "51a4a229f9363af924cbfc674923a900b5d4e8276fc642086e1b36858afef690"
+      url "https://github.com/original-solutions/livepane-agent/releases/download/v0.5.1/livepane_0.5.1_linux_amd64.tar.gz"
+      sha256 "4c2f41eebdf146f2feeb9de7f38fd2eb572b2ecd6f4bd1a2b8014b99888a788c"
     end
   end
 
